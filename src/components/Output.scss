@@ -26,7 +26,7 @@ div.page {
 
   .container {
     position: absolute;
-    top: 9.35cm;
+    top: 9.45cm;
     left: 1.2cm;
     right: 1.2cm;
 
@@ -99,15 +99,15 @@ div.page {
 }
 
 div.first-page {
-  background-image: url('./bg1.png');
+  background-image: url('/bg1.png');
 }
 
 div.another-page {
-  background-image: url('./bg2.png');
+  background-image: url('/bg2.png');
 
 
   .container {
-    top: 1.6cm;
+    top: 1.7cm;
   }
 }
 
@@ -126,10 +126,10 @@ div.another-page {
   }
 
   div.first-page {
-    background-image: url('./bg1.png');
+    background-image: url('/bg1.png');
   }
 
   div.another-page {
-    background-image: url('./bg2.png');
+    background-image: url('/bg2.png');
   }
 }

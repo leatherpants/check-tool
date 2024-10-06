@@ -22,8 +22,8 @@ export default function App() {
   const [isPrinting, setIsPrinting] = useState(false);
 
   return (<>
-    <button onClick={() => { setIsPrinting(!isPrinting) }}>{isPrinting ? 'Back' : 'Generate blank'}</button>
     {isPrinting && <Output />}
+    <button onClick={() => { setIsPrinting(!isPrinting) }}>{isPrinting ? 'Back' : 'Generate blank'}</button>
     {!isPrinting && <Home />}
   </>);
 }

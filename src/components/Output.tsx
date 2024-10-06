@@ -33,8 +33,8 @@ export default function Output() {
   }
 
   return (<>
-    <button id="button" onClick={() => { window.print() }}>print</button>
     {pagesForRendering}
+    <button id="button" onClick={() => { window.print() }}>print</button>
   </>);
 }
 
@@ -46,7 +46,7 @@ function generatePage(list: CheckListItem[], pageClass: string, hasTotal = false
           <div className="row" key={item.id}>
             <div className="name">{getTypeName(item.company)}</div>
             <div className="date">{item.date}</div>
-            <div className="number">{item.checkNumber}</div>
+            <div className="number">Чек №{item.checkNumber}</div>
             <div className="company">{item.company}</div>
             <div className="sum">
               <div className="price">

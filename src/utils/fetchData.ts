@@ -49,7 +49,7 @@ function generateListItem(input: any): CheckListItem {
 }
 
 function getDayMonthYear(date: Date): string {
-  const day = date.getDay();
+  const day = date.getDate();
   const month = date.getMonth() + 1;
   return `${day < 10 ? '0' + day : day}.${month < 10 ? '0' + month : month}.${date.getFullYear()}`
 }
