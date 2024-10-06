@@ -8,7 +8,7 @@ export default function CheckList() {
 
   const checklist = useSelector((state: RootState) => state.checklist);
   const dispatch = useDispatch();
-
+  const test = '';
   function onButtonClick() {
     dispatch(clearAll());
   }
