@@ -1,0 +1,10 @@
+
+console.log(`
+  date: ${CHECK1.data.json.dateTime}
+check # : ${CHECK1.data.json.requestNumber}
+company name: ${CHECK1.data.json.user}
+price: ${CHECK1.data.json.totalSum}
+sum nds:
+${CHECK1.data.json.nds18}
+${CHECK1.data.json.nds10}
+  `);

@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(204, 204, 204);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+div.page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+
+  width: 29.7cm;
+  height: 21cm;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+
+  .container {
+    position: absolute;
+    top: 9.35cm;
+    left: 1.2cm;
+    right: 1.2cm;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.57cm;
+  }
+
+  .row {
+    position: relative;
+    font-size: 10pt;
+  }
+
+  .name {
+    position: absolute;
+    left: 0.3cm;
+    font-size: 15pt;
+
+  }
+
+  .date {
+    position: absolute;
+    left: 7cm;
+  }
+
+  .number {
+    position: absolute;
+    left: 10.5cm;
+    font-size: 12pt;
+  }
+
+  .company {
+    position: absolute;
+    left: 16.3cm;
+    width: 5.5cm;
+    font-size: 12pt;
+
+  }
+
+  .sum {
+    position: absolute;
+    top: -0.06cm;
+    right: 0;
+    letter-spacing: 0.38cm;
+    font-family: monospace;
+  }
+
+  .price {
+    position: absolute;
+    right: 0.1cm;
+    text-align: end;
+  }
+
+  .nds {
+    position: absolute;
+    right: 0.15cm;
+    top: 0.65cm;
+  }
+
+  .cell {
+    width: 0.56cm;
+    height: 0.55cm;
+    line-height: 0.5cm;
+    text-align: center;
+  }
+
+  button {
+    float: left;
+  }
+}
+
+div.first-page {
+  background-image: url('./bg.jpg');
+}
+
+div.another-page {
+  background-image: url('./bg2.jpg');
+
+
+  .container {
+    top: 1.6cm;
+  }
+}
+
+@media print {
+
+  body,
+  div.page {
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+  }
+
+  div.page {
+    background-position: center;
+    background-size: contain;
+  }
+
+  div.first-page {
+    background-image: url('./bg.jpg');
+  }
+
+  div.another-page {
+    background-image: url('./bg2.jpg');
+  }
+}
