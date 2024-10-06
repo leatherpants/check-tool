@@ -2,7 +2,8 @@ import { CheckListItem } from "../features/checkListSlice";
 // import api from "./api";
 import { v4 as uuid } from "uuid";
 
-const TOKEN = import.meta.env.CHECK_TOKEN;
+const TOKEN = import.meta.env.VITE_CHECK_TOKEN;
+
 export async function fetchOneCheck(input: string): Promise<CheckListItem> {
   let json;
 
