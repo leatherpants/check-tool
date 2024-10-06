@@ -4,8 +4,6 @@ import { v4 as uuid } from "uuid";
 
 const TOKEN = import.meta.env.VITE_CHECK_TOKEN;
 
-console.log(TOKEN)
-
 export async function fetchOneCheck(input: string): Promise<CheckListItem> {
   let json;
 
